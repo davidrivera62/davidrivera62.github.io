@@ -38,32 +38,10 @@
 
 <div class="container">
         <div align="center" class="table-responsive">
-         <h4>Ajuste</h4>
-        </br>
-        <div>
-<img src="datafitted.png" width=70% height=70%>
-</br>
-</div>
-</div>
-</div>
-
-<div class="container">
-        <div align="center" class="table-responsive">
-         <h4>Diagnostico</h4>
-        </br>
-        <div>
-<img src="diagnosis.png" width=70% height=70%>
-</br>
-</div>
-</div>
-</div>
-
-<div class="container">
-        <div align="center" class="table-responsive">
          <h4>Pronostico</h4>
         </br>
         <div>
-<img src="forecasting.png" width=70% height=70%>
+<img src="forecasting_real.png" width=70% height=70%>
 </br>
 </div>
 </div>
@@ -117,7 +95,7 @@
 $(document).ready(function(){
   $('#load_data').click(function(){
     $.ajax({
-      url:"comparacion.csv",
+      url:"compare_real.csv",
       dataType:"text",
       success:function(data)
       {
